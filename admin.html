@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScrapMate - Manage Cars</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <button class="burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false" id="burgerBtn">&#9776;</button>
+    <h1 class="brand">ScrapMate</h1>
+  </header>
+
+  <nav id="menu" class="side-menu" hidden>
+    <button class="close-menu" aria-label="Close menu" id="closeMenuBtn">&times;</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="add-car.html">Add Car Entry</a></li>
+      <li><a href="admin.html" aria-current="page">Manage Cars</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="page-title">Manage Cars</h2>
+    <section id="car-list" aria-live="polite" class="car-list">
+      <!-- Cars will be dynamically loaded here -->
+    </section>
+  </main>
+
+  <script src="js/menu.js"></script>
+  <script src="js/car-data.js"></script>
+  <script src="js/qr-code.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
